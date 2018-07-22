@@ -6,11 +6,15 @@
 <body>
     <%- partial('common/navbar', { page }) %>
     <%- body %>
+    <a id="rocket" href="#top" class="" ></a>
     <%- partial('common/footer') %>
     <%- partial('common/scripts') %>
 
     <% if (has_config('search.type')) { %>
     <%- partial('search/' + get_config('search.type')) %>
     <% } %>
+
+    <script type="text/javascript" src="/js/gotop.js" async=""></script>
+
 </body>
 </html>
